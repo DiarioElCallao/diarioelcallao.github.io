@@ -17,8 +17,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Libre+Bodoni:ital,wght@1,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=26">
-<script src="assets/site.js?v=26" defer></script>
+<link rel="stylesheet" href="assets/site.css?v=28">
+<script src="assets/site.js?v=28" defer></script>
 
 </head>
 <body>
@@ -35,6 +35,7 @@
   <symbol id="ic-rayo" viewBox="0 0 24 24"><path d="M13.5 2 4 14h6.5L9 22l11-13h-6.8z"/></symbol>
   <symbol id="ic-flecha" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7-1.4-1.4L13.2 12 7.6 6.4z"/></symbol>
   <symbol id="ic-x" viewBox="0 0 24 24"><path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6l5.6-5.6L5 6.4z"/></symbol>
+  <symbol id="ic-anuncio" viewBox="0 0 24 24"><path d="M18 4.5v15l-5.5-3.5H8l1.4 4.3a1 1 0 0 1-.95 1.3H7a1 1 0 0 1-.95-.7L4.2 16A3 3 0 0 1 2 13.1v-2.2A3 3 0 0 1 5 8h7.5zM20 9.5a2.5 2.5 0 0 1 0 5z"/></symbol>
   <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 4.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol>
   <symbol id="ic-reloj" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 3v4.6l3.4 2-1 1.7-4.4-2.6V7z"/></symbol>
 </svg>
@@ -119,13 +120,38 @@
 
 <main id="contenido">
 
-  <div class="wrap pag-sec">
-    <header class="sec-cab">
-      <h1>Avisos</h1>
-      <p>Consulta los avisos legales y edictos publicados en el diario oficial de la Provincia Constitucional del Callao.</p>
-    </header>
-    <div class="ed-pagina">
-      <div class="ed-principal">
+  <section class="banda-avisos" aria-labelledby="h-avisos">
+    <div class="wrap">
+      <div class="av-rejilla">
+        <div class="av-txt">
+          <p class="av-sello"><span></span>Diario oficial del Callao desde 1883</p>
+          <h1 id="h-avisos">Avisos</h1>
+          <p class="av-bajada">Publica tu aviso en el diario oficial del Callao. Sale impreso y queda en esta web, donde cualquiera puede consultarlo.</p>
+          <div class="av-acciones">
+            <a class="boton boton-wa" href="https://wa.me/51991330814?text=Hola%2C%20quiero%20publicar%20un%20aviso%20en%20el%20Diario%20El%20Callao" target="_blank" rel="noopener"><svg><use href="#ic-wa"/></svg>Cotizar mi aviso</a>
+            <a class="boton boton-borde-azul" href="#consultar">Consultar avisos</a>
+          </div>
+          <ol class="av-pasos"><li>Envía tu documento por WhatsApp.</li><li>Te damos el precio y la fecha.</li><li>Sale en el diario y en la web.</li></ol>
+        </div>
+        <ul class="av-tipos" aria-label="Qué avisos publicamos">
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20Edicto%20matrimonial" target="_blank" rel="noopener"><b>Edicto matrimonial</b><span>Previo al matrimonio civil en las municipalidades del Callao.</span><svg><use href="#ic-flecha"/></svg></a></li>
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20Aviso%20judicial" target="_blank" rel="noopener"><b>Aviso judicial</b><span>Notificaciones, citaciones y resoluciones.</span><svg><use href="#ic-flecha"/></svg></a></li>
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20Sucesi%C3%B3n%20intestada" target="_blank" rel="noopener"><b>Sucesión intestada</b><span>Publicación del trámite de sucesión.</span><svg><use href="#ic-flecha"/></svg></a></li>
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20Remates%20y%20convocatorias" target="_blank" rel="noopener"><b>Remates y convocatorias</b><span>Remates, convocatorias y juntas de accionistas.</span><svg><use href="#ic-flecha"/></svg></a></li>
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20P%C3%A9rdida%20de%20documentos" target="_blank" rel="noopener"><b>Pérdida de documentos</b><span>Títulos, certificados y otros documentos.</span><svg><use href="#ic-flecha"/></svg></a></li>
+          <li><a href="https://wa.me/51991330814?text=Hola%2C%20quiero%20cotizar%20un%20aviso%20en%20el%20Diario%20El%20Callao%3A%20Avisos%20empresariales" target="_blank" rel="noopener"><b>Avisos empresariales</b><span>Comunicados de empresas y avisos legales.</span><svg><use href="#ic-flecha"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="av-anuncio">
+        <span class="av-anuncio-ic"><svg><use href="#ic-anuncio"/></svg></span>
+        <p><b>¿Tienes un negocio?</b> Anúncialo en El Callao: en el diario impreso y en esta web.</p>
+        <a class="boton boton-claro" href="https://wa.me/51991330814?text=Hola%2C%20quiero%20anunciar%20mi%20negocio%20en%20el%20Diario%20El%20Callao" target="_blank" rel="noopener">Quiero anunciar</a>
+      </div>
+    </div>
+  </section>
+  <div class="wrap av-consulta" id="consultar">
+    <h2 class="cinta-titulo"><span>Consulta los avisos publicados</span></h2>
+    <div class="ed-principal">
         <form class="ed-buscador" action="edictos.html" method="get" role="search">
           <label for="ed-q">Nombre, apellido, municipalidad o expediente
             <input id="ed-q" name="q" type="search" value="" maxlength="80" placeholder="Ej.: García, 00123-2026">
@@ -144,21 +170,6 @@
           <span></span>
           
         </nav>
-      </div>
-      <aside class="ed-lado">
-        <div class="ed-publicar">
-          <h2>¿Necesitas publicar un aviso?</h2>
-          <p>Lo publicamos en el diario oficial del Callao. Envíanos tu documento por WhatsApp y te damos el precio y la fecha de publicación.</p>
-          <a class="boton boton-azul" href="https://wa.me/51991330814?text=Hola%2C%20quiero%20publicar%20un%20aviso%20en%20el%20Diario%20El%20Callao" target="_blank" rel="noopener"><svg><use href="#ic-wa"/></svg>Cotizar por WhatsApp</a>
-          <p class="num">+51 991 330 814</p>
-        </div>
-        <dl class="edictos-tipos">
-        <div><dt>Edictos matrimoniales</dt><dd>Publicación previa al matrimonio civil en las municipalidades del Callao.</dd></div>
-        <div><dt>Avisos judiciales</dt><dd>Notificaciones, citaciones y resoluciones que requieren publicación.</dd></div>
-        <div><dt>Sucesiones y remates</dt><dd>Sucesión intestada, remates y convocatorias.</dd></div>
-        <div><dt>Avisos legales y empresariales</dt><dd>Pérdida de documentos, juntas de accionistas y comunicados.</dd></div>
-      </dl>
-      </aside>
     </div>
   </div>
 </main>

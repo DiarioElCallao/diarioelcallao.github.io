@@ -178,7 +178,7 @@
       });
     }, { rootMargin: '0px 0px -8% 0px' });
     var grupos = {};
-    document.querySelectorAll('.feed, .imp, .nota, .widget, .lista-edictos li, .dd-archivo li, .plan, .linea li, .redes-lista li, .dd-pasos li, .boys-principal').forEach(function (el) {
+    document.querySelectorAll('.feed, .imp, .nota, .widget, .lista-edictos li, .av-tipos li, .dd-archivo li, .plan, .linea li, .redes-lista li, .dd-pasos li, .boys-principal').forEach(function (el) {
       if (el.getBoundingClientRect().top < innerHeight) return;
       var padre = el.parentElement, i = grupos[padre && padre.className] = ((grupos[padre && padre.className] || 0) + 1) % 4;
       el.style.transitionDelay = (i * 0.08) + 's';
