@@ -497,14 +497,6 @@ body.con-dock .fab{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 .nos-lista a{color:var(--azul);font-weight:700}
 
 /* ---------- edictos ---------- */
-.ed-buscador{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) auto;gap:12px;align-items:end;margin-bottom:28px}
-.ed-buscador label{display:flex;flex-direction:column;gap:8px;font:700 12px var(--f-ui);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-3)}
-.ed-buscador input,.ed-buscador select{font:500 16px var(--f-ui);color:var(--tinta);background:var(--papel-2);border:0;border-radius:99px;padding:13px 20px;width:100%;transition:background-color .35s var(--curva)}
-.ed-buscador input:focus,.ed-buscador select:focus{outline:3px solid var(--velo);background:var(--papel)}
-.lista-edictos{display:flex;flex-direction:column;gap:6px}
-.lista-edictos li a{display:flex;flex-direction:column;gap:6px;padding:18px 20px;margin-inline:-20px;border-radius:var(--r);transition:background-color .45s var(--curva),transform .45s var(--curva)}
-.lista-edictos li a:hover{background:var(--velo);transform:translateX(4px)}
-.lista-edictos strong{font:600 19px/1.3 var(--f-tit)}
 .ed-datos{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:24px}
 .ed-datos dt{font:700 11.5px var(--f-ui);text-transform:uppercase;letter-spacing:.07em;color:var(--tinta-3)}
 .ed-datos dd{margin:4px 0 0;font:600 15px var(--f-ui)}
@@ -582,7 +574,6 @@ body.con-dock .fab{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
   .util-ano{display:none}
   .dd-ultima,.nos-contacto{grid-template-columns:minmax(0,1fr);gap:28px}
   .dd-pasos ol{grid-template-columns:minmax(0,1fr);gap:24px}
-  .ed-buscador{grid-template-columns:minmax(0,1fr)}
   .historia .wrap{grid-template-columns:minmax(0,1fr)}
   .linea{grid-template-columns:minmax(0,1fr);background:linear-gradient(180deg,var(--azul-logo),rgba(42,122,165,.15)) left/2px 100% no-repeat;margin-left:6px;padding-left:28px}
   .linea li{padding:0 0 26px}
@@ -674,8 +665,6 @@ body.con-dock .fab{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 .av-anuncio-ic svg{width:23px;height:23px}
 .av-anuncio p{flex:1;min-width:0;font:17px/1.4 var(--f-tit);color:var(--sobre-oscuro-2)}
 .av-anuncio b{color:#fff;font-weight:700}
-.av-consulta{padding-block:20px 72px}
-.av-consulta .ed-principal{max-width:880px}
 .w-promo{font:600 17px/1.35 var(--f-tit);color:var(--tinta)}
 .w-anunciar{display:inline-flex;align-items:center;gap:8px;font:700 13.5px var(--f-ui);color:var(--azul);transition:gap .35s var(--curva)}
 .w-anunciar:hover{gap:12px}
