@@ -21,10 +21,10 @@
     if (reducido) {
       banner.pause();
       Array.prototype.slice.call(banner.querySelectorAll('source')).forEach(function (s) { s.remove(); });
-      banner.poster = cel ? 'video/banner-celular-final.jpg?v=2' : 'video/banner-final.jpg?v=2';
+      banner.poster = cel ? 'video/banner-celular-final.jpg?v=3' : 'video/banner-final.jpg?v=3';
       banner.load();
     } else {
-      if (cel) banner.poster = 'video/banner-celular-inicio.jpg?v=2';
+      if (cel) banner.poster = 'video/banner-celular-inicio.jpg?v=3';
       // Safari (iPhone) no respeta "media" en <source> y ponía el video ancho recortado: dejamos solo el que toca
       var sobra = Array.prototype.filter.call(banner.querySelectorAll('source'), function (s) { return !!s.media !== cel; });
       if (sobra.length) {
