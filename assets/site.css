@@ -142,19 +142,11 @@ a:hover .foto{transform:scale(1.045)}
 
 /* ---------- cabecera ---------- */
 .mast{text-align:center;padding-block:30px 24px}
-.logo{display:inline-grid;position:relative;color:var(--azul-logo);line-height:.8;padding-top:.32em}
-.logo-years{position:absolute;left:.06em;top:0;font:italic 700 .3em/1 var(--f-cifra);letter-spacing:-.01em}
-.logo-years b{font-size:1.35em}
-.logo-name{font:900 1em var(--f-logo);letter-spacing:-.055em;transform:scaleY(1.04)}
-.logo-tag{justify-self:end;display:flex;align-items:center;gap:.35em;margin-top:.08em;font:italic 800 .17em/1 var(--f-logo);letter-spacing:.02em;color:var(--tinta-2)}
-.logo-tag::before{content:"";width:3.2em;height:.12em;background:currentColor;border-radius:9px}
-.mast .logo{font-size:clamp(66px,11vw,140px)}
 .mast-video{padding-block:0 20px}
 .banner{display:block;max-width:1920px;margin-inline:auto;aspect-ratio:3/1;background:#26335f;overflow:hidden}
 .banner video{display:block;width:100%;height:100%;object-fit:cover}
 @media (max-width:640px){.banner{aspect-ratio:6/5}}
 .mast-sm{padding-block:16px 12px}
-.mast-sm .logo{font-size:clamp(46px,6.5vw,74px)}
 /* Logo impreso del diario (páginas interiores) con su lema */
 .logo-img{display:inline-flex;flex-direction:column;align-items:center;gap:4px}
 .logo-img img{display:block;width:clamp(230px,34vw,420px);height:auto;transition:transform .5s var(--curva)}
@@ -340,8 +332,9 @@ a:hover .foto{transform:scale(1.045)}
 .pie{background:linear-gradient(180deg,var(--papel) 0,var(--noche) 110px,var(--noche));color:var(--sobre-oscuro);margin-top:20px}
 .pie .wrap{padding-block:140px 28px}
 .pie-top{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr) minmax(0,1fr);gap:48px}
-.pie .logo{font-size:60px;color:#6fb6dd}
-.pie .logo-tag{color:var(--sobre-oscuro-2)}
+.pie .logo-img{align-items:flex-start}
+.pie .logo-img img{width:min(300px,100%)}
+.pie .logo-lema{color:var(--sobre-oscuro-2)}
 .pie-marca p{font:16px/1.55 var(--f-tit);color:var(--sobre-oscuro-2);margin:18px 0 10px;max-width:36ch}
 .pie-mas{display:inline-flex;align-items:center;gap:4px;font:700 14px var(--f-ui);color:#7fc3e8;margin-bottom:16px;transition:gap .35s var(--curva)}
 .pie-mas:hover{gap:9px}
