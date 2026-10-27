@@ -21,9 +21,19 @@
     if (reducido) {
       banner.pause();
       Array.prototype.slice.call(banner.querySelectorAll('source')).forEach(function (s) { s.remove(); });
-      banner.poster = cel ? 'video/banner-celular-final.jpg' : 'video/banner-final.jpg';
+      banner.poster = cel ? 'video/banner-celular-final.jpg?v=2' : 'video/banner-final.jpg?v=2';
       banner.load();
-    } else if (cel) banner.poster = 'video/banner-celular-inicio.jpg';
+    } else {
+      if (cel) banner.poster = 'video/banner-celular-inicio.jpg?v=2';
+      // Safari (iPhone) no respeta "media" en <source> y ponía el video ancho recortado: dejamos solo el que toca
+      var sobra = Array.prototype.filter.call(banner.querySelectorAll('source'), function (s) { return !!s.media !== cel; });
+      if (sobra.length) {
+        sobra.forEach(function (s) { s.remove(); });
+        banner.load();
+        var p = banner.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+    }
   }
 
   // Menú oscuro: se queda fijo arriba al pasar la cabecera
