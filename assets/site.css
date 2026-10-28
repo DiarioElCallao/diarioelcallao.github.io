@@ -149,6 +149,7 @@ a:hover .foto{transform:scale(1.045)}
 .mast-sm{padding-block:16px 12px}
 /* Logo impreso del diario (páginas interiores) con su lema */
 .logo-img{display:inline-flex;flex-direction:column;align-items:center;gap:4px}
+.logo-img picture{display:block}
 .logo-img img{display:block;width:clamp(230px,34vw,420px);height:auto;transition:transform .5s var(--curva)}
 .logo-img:hover img{transform:scale(1.02)}
 .logo-lema{font:italic 500 clamp(16px,1.6vw,20px)/1.2 var(--f-tit);letter-spacing:.01em;color:var(--tinta-2)}
